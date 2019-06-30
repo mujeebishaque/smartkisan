@@ -15,6 +15,8 @@ class Distributor(models.Model):
 
     experience = models.PositiveIntegerField(blank=False)
     dealsNature = models.CharField('Deal Nature', max_length=128, choices = DISTRIBUTOR_TYPES)
+    mobileNumber = models.CharField('Mobile Number', max_length=15)
+    shopName = models.CharField('Shop Name', max_length=32)
 
     def __str__(self):
         return self.name 
